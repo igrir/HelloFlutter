@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:helloflutter/components/body.dart';
 import 'package:helloflutter/constant.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -63,6 +65,7 @@ class CustomAppBar extends StatelessWidget {
             press: () {
               _showMyDialog(context, "Gabung Jadi Mamang CuanKey", "Rebus indomie dalam kuahnya beserta plastik bungkusnya");
             }),
+
         ],
       ),
     );

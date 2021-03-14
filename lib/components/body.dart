@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:helloflutter/Components/CustomAppBar.dart';
 import 'package:helloflutter/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -80,14 +81,24 @@ class Link extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new InkWell(
-      child: new Text(
-        Label,
-        style: TextStyle(
-          color: Colors.blue,
-          decoration: TextDecoration.underline
-        ),),
-      onTap: ()=> launch(URL),
+    return InkWell(
+      onTap: () {
+        print("Test kirim" + URL);
+        openURL(URL);
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Text(
+          Label,
+          style: TextStyle(
+            color: Colors.blue,
+            decoration: TextDecoration.underline
+          ),),
+      ),
     );
+  }
+
+  Future<void> openURL(String url) async {
+    await launch(url);
   }
 }
