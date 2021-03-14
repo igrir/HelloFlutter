@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:helloflutter/components/body.dart';
 import 'package:helloflutter/constant.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
