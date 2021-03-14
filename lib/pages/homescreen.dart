@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:helloflutter/Components/body.dart';
-import 'package:helloflutter/Components/customappbar.dart';
+import 'package:helloflutter/components/body.dart';
+import 'package:helloflutter/components/customappbar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
